@@ -549,6 +549,7 @@
 				6CCE0F0115E5C3240019940A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CCE0F0215E5C3240019940A /* Build configuration list for PBXNativeTarget "HuffPoNewsReader-iPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +558,7 @@
 				6CCE0F0415E5C3240019940A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
