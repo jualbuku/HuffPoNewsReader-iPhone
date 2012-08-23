@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <HuffPoAPI/HuffPoAPI.h>
 
 @interface ViewController : UIViewController
 

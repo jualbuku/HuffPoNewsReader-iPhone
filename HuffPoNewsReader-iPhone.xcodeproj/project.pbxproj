@@ -20,6 +20,15 @@
 		6CCE0EF115E5C3240019940A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0ED215E5C3230019940A /* Foundation.framework */; };
 		6CCE0EF915E5C3240019940A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE0EF715E5C3240019940A /* InfoPlist.strings */; };
 		6CCE0EFC15E5C3240019940A /* HuffPoNewsReader_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE0EFB15E5C3240019940A /* HuffPoNewsReader_iPhoneTests.m */; };
+		6CCE0F0815E5C4950019940A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE0F0715E5C4950019940A /* README.md */; };
+		6CCE0F2D15E5D6810019940A /* libHuffPoAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0F1E15E5D4D50019940A /* libHuffPoAPI.a */; };
+		6CCE0F3015E5D8730019940A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0F2F15E5D8730019940A /* CFNetwork.framework */; };
+		6CCE0F3515E5D8B00019940A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0F3115E5D8B00019940A /* libxml2.dylib */; };
+		6CCE0F3615E5D8B00019940A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0F3215E5D8B00019940A /* QuartzCore.framework */; };
+		6CCE0F3715E5D8B00019940A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0F3315E5D8B00019940A /* Security.framework */; };
+		6CCE0F3815E5D8B00019940A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0F3415E5D8B00019940A /* SystemConfiguration.framework */; };
+		6CCE0F3A15E5D8E30019940A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0F3915E5D8E30019940A /* MobileCoreServices.framework */; };
+		6CCE0F3C15E5D8EA0019940A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0F3B15E5D8EA0019940A /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +38,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6CCE0ECB15E5C3230019940A;
 			remoteInfo = "HuffPoNewsReader-iPhone";
+		};
+		6CCE0F1D15E5D4D50019940A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CCE0F0915E5D4D40019940A /* HuffPoAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C9DBD0315DDA8A60088DFDF;
+			remoteInfo = HuffPoAPI;
+		};
+		6CCE0F1F15E5D4D50019940A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CCE0F0915E5D4D40019940A /* HuffPoAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C9DBD1415DDA8A70088DFDF;
+			remoteInfo = HuffPoAPITests;
+		};
+		6CCE0F2B15E5D66A0019940A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CCE0F0915E5D4D40019940A /* HuffPoAPI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C9DBD0215DDA8A60088DFDF;
+			remoteInfo = HuffPoAPI;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,6 +82,15 @@
 		6CCE0EF815E5C3240019940A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6CCE0EFA15E5C3240019940A /* HuffPoNewsReader_iPhoneTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HuffPoNewsReader_iPhoneTests.h; sourceTree = "<group>"; };
 		6CCE0EFB15E5C3240019940A /* HuffPoNewsReader_iPhoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HuffPoNewsReader_iPhoneTests.m; sourceTree = "<group>"; };
+		6CCE0F0715E5C4950019940A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		6CCE0F0915E5D4D40019940A /* HuffPoAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HuffPoAPI.xcodeproj; path = HuffPoAPI/HuffPoAPI.xcodeproj; sourceTree = "<group>"; };
+		6CCE0F2F15E5D8730019940A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6CCE0F3115E5D8B00019940A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		6CCE0F3215E5D8B00019940A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6CCE0F3315E5D8B00019940A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6CCE0F3415E5D8B00019940A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6CCE0F3915E5D8E30019940A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6CCE0F3B15E5D8EA0019940A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +98,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CCE0ED515E5C3230019940A /* CoreGraphics.framework in Frameworks */,
+				6CCE0F3C15E5D8EA0019940A /* CoreData.framework in Frameworks */,
+				6CCE0F3A15E5D8E30019940A /* MobileCoreServices.framework in Frameworks */,
+				6CCE0F3515E5D8B00019940A /* libxml2.dylib in Frameworks */,
+				6CCE0F3615E5D8B00019940A /* QuartzCore.framework in Frameworks */,
+				6CCE0F3715E5D8B00019940A /* Security.framework in Frameworks */,
+				6CCE0F3815E5D8B00019940A /* SystemConfiguration.framework in Frameworks */,
+				6CCE0F3015E5D8730019940A /* CFNetwork.framework in Frameworks */,
+				6CCE0F2D15E5D6810019940A /* libHuffPoAPI.a in Frameworks */,
 				6CCE0ED115E5C3230019940A /* UIKit.framework in Frameworks */,
 				6CCE0ED315E5C3230019940A /* Foundation.framework in Frameworks */,
-				6CCE0ED515E5C3230019940A /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +128,8 @@
 		6CCE0EC115E5C3230019940A = {
 			isa = PBXGroup;
 			children = (
+				6CCE0F0915E5D4D40019940A /* HuffPoAPI.xcodeproj */,
+				6CCE0F0715E5C4950019940A /* README.md */,
 				6CCE0ED615E5C3230019940A /* HuffPoNewsReader-iPhone */,
 				6CCE0EF415E5C3240019940A /* HuffPoNewsReader-iPhoneTests */,
 				6CCE0ECF15E5C3230019940A /* Frameworks */,
@@ -100,6 +149,13 @@
 		6CCE0ECF15E5C3230019940A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CCE0F3B15E5D8EA0019940A /* CoreData.framework */,
+				6CCE0F3915E5D8E30019940A /* MobileCoreServices.framework */,
+				6CCE0F3115E5D8B00019940A /* libxml2.dylib */,
+				6CCE0F3215E5D8B00019940A /* QuartzCore.framework */,
+				6CCE0F3315E5D8B00019940A /* Security.framework */,
+				6CCE0F3415E5D8B00019940A /* SystemConfiguration.framework */,
+				6CCE0F2F15E5D8730019940A /* CFNetwork.framework */,
 				6CCE0ED015E5C3230019940A /* UIKit.framework */,
 				6CCE0ED215E5C3230019940A /* Foundation.framework */,
 				6CCE0ED415E5C3230019940A /* CoreGraphics.framework */,
@@ -151,6 +207,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6CCE0F0A15E5D4D40019940A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CCE0F1E15E5D4D50019940A /* libHuffPoAPI.a */,
+				6CCE0F2015E5D4D50019940A /* HuffPoAPITests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,6 +230,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6CCE0F2C15E5D66A0019940A /* PBXTargetDependency */,
 			);
 			name = "HuffPoNewsReader-iPhone";
 			productName = "HuffPoNewsReader-iPhone";
@@ -209,6 +275,12 @@
 			mainGroup = 6CCE0EC115E5C3230019940A;
 			productRefGroup = 6CCE0ECD15E5C3230019940A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6CCE0F0A15E5D4D40019940A /* Products */;
+					ProjectRef = 6CCE0F0915E5D4D40019940A /* HuffPoAPI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6CCE0ECB15E5C3230019940A /* HuffPoNewsReader-iPhone */,
@@ -217,6 +289,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6CCE0F1E15E5D4D50019940A /* libHuffPoAPI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHuffPoAPI.a;
+			remoteRef = 6CCE0F1D15E5D4D50019940A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6CCE0F2015E5D4D50019940A /* HuffPoAPITests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HuffPoAPITests.octest;
+			remoteRef = 6CCE0F1F15E5D4D50019940A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		6CCE0ECA15E5C3230019940A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -224,6 +313,7 @@
 			files = (
 				6CCE0EDB15E5C3230019940A /* InfoPlist.strings in Resources */,
 				6CCE0EE415E5C3230019940A /* MainStoryboard.storyboard in Resources */,
+				6CCE0F0815E5C4950019940A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +369,11 @@
 			isa = PBXTargetDependency;
 			target = 6CCE0ECB15E5C3230019940A /* HuffPoNewsReader-iPhone */;
 			targetProxy = 6CCE0EF215E5C3240019940A /* PBXContainerItemProxy */;
+		};
+		6CCE0F2C15E5D66A0019940A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HuffPoAPI;
+			targetProxy = 6CCE0F2B15E5D66A0019940A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -362,10 +457,20 @@
 		6CCE0F0015E5C3240019940A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HuffPoNewsReader-iPhone/HuffPoNewsReader-iPhone-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "HuffPoNewsReader-iPhone/HuffPoNewsReader-iPhone-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -373,10 +478,20 @@
 		6CCE0F0115E5C3240019940A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HuffPoNewsReader-iPhone/HuffPoNewsReader-iPhone-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "HuffPoNewsReader-iPhone/HuffPoNewsReader-iPhone-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -1,0 +1,3 @@
+[submodule "HuffPoAPI"]
+	path = HuffPoAPI
+	url = git://github.com/thehackerati/HuffPoAPI.git
