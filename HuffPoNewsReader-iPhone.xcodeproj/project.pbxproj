@@ -29,6 +29,7 @@
 		6CCE0F3815E5D8B00019940A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0F3415E5D8B00019940A /* SystemConfiguration.framework */; };
 		6CCE0F3A15E5D8E30019940A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0F3915E5D8E30019940A /* MobileCoreServices.framework */; };
 		6CCE0F3C15E5D8EA0019940A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCE0F3B15E5D8EA0019940A /* CoreData.framework */; };
+		7EE75D9E15EFEC7900CB07B3 /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE75D9D15EFEC7900CB07B3 /* ArticleViewController.m */; };
 		8E15B40315EFB57D001764DB /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E15B40115EFB57D001764DB /* PickerViewController.m */; };
 		8E15B40415EFB57D001764DB /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E15B40215EFB57D001764DB /* PickerViewController.xib */; };
 /* End PBXBuildFile section */
@@ -93,6 +94,8 @@
 		6CCE0F3415E5D8B00019940A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6CCE0F3915E5D8E30019940A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		6CCE0F3B15E5D8EA0019940A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7EE75D9C15EFEC7900CB07B3 /* ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
+		7EE75D9D15EFEC7900CB07B3 /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
 		8E15B40015EFB57D001764DB /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		8E15B40115EFB57D001764DB /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		8E15B40215EFB57D001764DB /* PickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 				6CCE0EE215E5C3230019940A /* MainStoryboard.storyboard */,
 				6CCE0EE515E5C3230019940A /* ViewController.h */,
 				6CCE0EE615E5C3230019940A /* ViewController.m */,
+				7EE75D9C15EFEC7900CB07B3 /* ArticleViewController.h */,
+				7EE75D9D15EFEC7900CB07B3 /* ArticleViewController.m */,
 				6CCE0ED715E5C3230019940A /* Supporting Files */,
 			);
 			path = "HuffPoNewsReader-iPhone";
@@ -361,6 +366,7 @@
 				6CCE0EE115E5C3230019940A /* AppDelegate.m in Sources */,
 				6CCE0EE715E5C3230019940A /* ViewController.m in Sources */,
 				8E15B40315EFB57D001764DB /* PickerViewController.m in Sources */,
+				7EE75D9E15EFEC7900CB07B3 /* ArticleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ArticleViewController.h"
+
 
 @interface ViewController ()
 
@@ -40,6 +42,16 @@
 - (IBAction)goToPicker:(id)sender {
     pvc = [[PickerViewController alloc] initWithNibName:@"PickerViewController" bundle:[NSBundle mainBundle] huffPoAPI:self.api];
     [self presentModalViewController:pvc animated:YES];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier]isEqualToString:@"articleTrans"])
+    {
+        NSLog(@"test");
+        ArticleViewController *articleViewController = [segue destinationViewController];
+        articleViewController.articleIdentifier = 1784166;
+    }
 }
 
 @end
