@@ -14,6 +14,8 @@
 
 @implementation ViewController
 
+@synthesize api;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,7 +38,7 @@
 }
 
 - (IBAction)goToPicker:(id)sender {
-    pvc = [[PickerViewController alloc] initWithNibName:@"PickerViewController" bundle:[NSBundle mainBundle] huffPoAPI:self->api];
+    pvc = [[PickerViewController alloc] initWithNibName:@"PickerViewController" bundle:[NSBundle mainBundle] huffPoAPI:self.api];
     [self presentModalViewController:pvc animated:YES];
 }
 

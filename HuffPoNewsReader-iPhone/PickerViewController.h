@@ -21,6 +21,7 @@
 @property (atomic, strong) IBOutlet UIPickerView *pickerView;
 //@property (atomic, strong) IBOutlet UIButton *doneButton;
 @property (atomic, strong) NSArray *huffPoSections;
+@property (atomic, strong) HuffPoAPI *api;
 
 -(IBAction)getSection:(id)sender;
 -(IBAction)goBack:(id)sender;

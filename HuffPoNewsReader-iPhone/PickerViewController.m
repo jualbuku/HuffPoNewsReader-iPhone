@@ -14,14 +14,14 @@
 
 @implementation PickerViewController
 
-@synthesize pickerView, huffPoSections, mlabel;
+@synthesize pickerView, huffPoSections, mlabel, api;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil huffPoAPI:(HuffPoAPI *) huffPoAPI
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self->api = huffPoAPI;
+        self.api = huffPoAPI;
     }
     return self;
 }
@@ -32,7 +32,7 @@
     // Do any additional setup after loading the view from its nib.
     
     //get the sections
-    huffPoSections = self->api.sections;
+    huffPoSections = self.api.sections;
     
     [pickerView selectRow:1 inComponent:0 animated:NO];
     mlabel.text= [[huffPoSections objectAtIndex:[pickerView selectedRowInComponent:0]] label];    

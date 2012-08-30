@@ -15,6 +15,8 @@
     @private HuffPoAPI *api;
 }
 
+@property (atomic, strong) HuffPoAPI *api;
+
 -(IBAction)goToPicker:(id)sender;
 
 @end
