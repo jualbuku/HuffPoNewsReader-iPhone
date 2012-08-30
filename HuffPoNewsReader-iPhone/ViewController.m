@@ -19,7 +19,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    api = [[HuffPoAPI alloc] init];
+    self->api = [[HuffPoAPI alloc] init];
     Section *firstSection = (Section *)[api.sections objectAtIndex:0];
     NSLog (@"First section: %@", firstSection.label);
 }
@@ -36,7 +36,7 @@
 }
 
 - (IBAction)goToPicker:(id)sender {
-    pvc = [[PickerViewController alloc] initWithNibName:@"PickerViewController" bundle:[NSBundle mainBundle] huffPoAPI:api];
+    pvc = [[PickerViewController alloc] initWithNibName:@"PickerViewController" bundle:[NSBundle mainBundle] huffPoAPI:self->api];
     [self presentModalViewController:pvc animated:YES];
 }
 

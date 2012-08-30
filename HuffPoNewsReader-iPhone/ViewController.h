@@ -11,8 +11,8 @@
 #import "PickerViewController.h"
 
 @interface ViewController : UIViewController {
-    PickerViewController *pvc;
-    HuffPoAPI *api;
+    @private PickerViewController *pvc;
+    @private HuffPoAPI *api;
 }
 
 -(IBAction)goToPicker:(id)sender;

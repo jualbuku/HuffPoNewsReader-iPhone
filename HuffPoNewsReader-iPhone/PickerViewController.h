@@ -8,14 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <HuffPoAPI/HuffPoAPI.h>
-#import "AppDelegate.h"
 
 @interface PickerViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UIActionSheetDelegate>{
-    IBOutlet UIPickerView *pickerView;
-    IBOutlet UILabel *mlabel;
-    NSArray *huffPoSections;
-    HuffPoAPI *api;
-    UIActionSheet *actionSheet;    
+    @private IBOutlet UIPickerView *pickerView;
+    @private IBOutlet UILabel *mlabel;
+    @private NSArray *huffPoSections;
+    @private HuffPoAPI *api;
+    @private UIActionSheet *actionSheet;    
 }
 
 @property (atomic, strong) UILabel *mlabel;
