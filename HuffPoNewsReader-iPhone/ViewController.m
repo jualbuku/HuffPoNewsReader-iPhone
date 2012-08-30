@@ -19,7 +19,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    HuffPoAPI *api = [[HuffPoAPI alloc] init];
+    api = [[HuffPoAPI alloc] init];
     Section *firstSection = (Section *)[api.sections objectAtIndex:0];
     NSLog (@"First section: %@", firstSection.label);
 }
@@ -33,6 +33,11 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (IBAction)goToPicker:(id)sender {
+    pvc = [[PickerViewController alloc] initWithNibName:@"PickerViewController" bundle:[NSBundle mainBundle] huffPoAPI:api];
+    [self presentModalViewController:pvc animated:YES];
 }
 
 @end

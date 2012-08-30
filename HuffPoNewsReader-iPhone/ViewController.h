@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <HuffPoAPI/HuffPoAPI.h>
+#import "PickerViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    PickerViewController *pvc;
+    HuffPoAPI *api;
+}
+
+-(IBAction)goToPicker:(id)sender;
 
 @end
