@@ -32,12 +32,12 @@
 		7EE75D9E15EFEC7900CB07B3 /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE75D9D15EFEC7900CB07B3 /* ArticleViewController.m */; };
 		8E15B40315EFB57D001764DB /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E15B40115EFB57D001764DB /* PickerViewController.m */; };
 		8E15B40415EFB57D001764DB /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E15B40215EFB57D001764DB /* PickerViewController.xib */; };
-		E862291615F2EC66001EF9FF /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = E862291115F2EC65001EF9FF /* photo1.png */; };
-		E862291715F2EC66001EF9FF /* photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = E862291215F2EC65001EF9FF /* photo2.png */; };
-		E862291815F2EC66001EF9FF /* photo3.png in Resources */ = {isa = PBXBuildFile; fileRef = E862291315F2EC65001EF9FF /* photo3.png */; };
-		E862291915F2EC66001EF9FF /* photo4.png in Resources */ = {isa = PBXBuildFile; fileRef = E862291415F2EC65001EF9FF /* photo4.png */; };
-		E862291A15F2EC66001EF9FF /* photo5.png in Resources */ = {isa = PBXBuildFile; fileRef = E862291515F2EC65001EF9FF /* photo5.png */; };
 		E862293315F30EF9001EF9FF /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E862293215F30EF9001EF9FF /* ScrollViewController.m */; };
+		E862294315F50D12001EF9FF /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = E862293E15F50D12001EF9FF /* photo1.png */; };
+		E862294415F50D12001EF9FF /* photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = E862293F15F50D12001EF9FF /* photo2.png */; };
+		E862294515F50D12001EF9FF /* photo3.png in Resources */ = {isa = PBXBuildFile; fileRef = E862294015F50D12001EF9FF /* photo3.png */; };
+		E862294615F50D12001EF9FF /* photo4.png in Resources */ = {isa = PBXBuildFile; fileRef = E862294115F50D12001EF9FF /* photo4.png */; };
+		E862294715F50D12001EF9FF /* photo5.png in Resources */ = {isa = PBXBuildFile; fileRef = E862294215F50D12001EF9FF /* photo5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,13 +105,13 @@
 		8E15B40015EFB57D001764DB /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		8E15B40115EFB57D001764DB /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		8E15B40215EFB57D001764DB /* PickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
-		E862291115F2EC65001EF9FF /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo1.png; path = ../../../ScrollViews/ScrollViews/photo1.png; sourceTree = "<group>"; };
-		E862291215F2EC65001EF9FF /* photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo2.png; path = ../../../ScrollViews/ScrollViews/photo2.png; sourceTree = "<group>"; };
-		E862291315F2EC65001EF9FF /* photo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo3.png; path = ../../../ScrollViews/ScrollViews/photo3.png; sourceTree = "<group>"; };
-		E862291415F2EC65001EF9FF /* photo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo4.png; path = ../../../ScrollViews/ScrollViews/photo4.png; sourceTree = "<group>"; };
-		E862291515F2EC65001EF9FF /* photo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo5.png; path = ../../../ScrollViews/ScrollViews/photo5.png; sourceTree = "<group>"; };
 		E862293115F30EF9001EF9FF /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		E862293215F30EF9001EF9FF /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		E862293E15F50D12001EF9FF /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo1.png; sourceTree = "<group>"; };
+		E862293F15F50D12001EF9FF /* photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo2.png; sourceTree = "<group>"; };
+		E862294015F50D12001EF9FF /* photo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo3.png; sourceTree = "<group>"; };
+		E862294115F50D12001EF9FF /* photo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo4.png; sourceTree = "<group>"; };
+		E862294215F50D12001EF9FF /* photo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo5.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,11 +188,11 @@
 		6CCE0ED615E5C3230019940A /* HuffPoNewsReader-iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				E862291115F2EC65001EF9FF /* photo1.png */,
-				E862291215F2EC65001EF9FF /* photo2.png */,
-				E862291315F2EC65001EF9FF /* photo3.png */,
-				E862291415F2EC65001EF9FF /* photo4.png */,
-				E862291515F2EC65001EF9FF /* photo5.png */,
+				E862293E15F50D12001EF9FF /* photo1.png */,
+				E862293F15F50D12001EF9FF /* photo2.png */,
+				E862294015F50D12001EF9FF /* photo3.png */,
+				E862294115F50D12001EF9FF /* photo4.png */,
+				E862294215F50D12001EF9FF /* photo5.png */,
 				8E15B40015EFB57D001764DB /* PickerViewController.h */,
 				8E15B40115EFB57D001764DB /* PickerViewController.m */,
 				8E15B40215EFB57D001764DB /* PickerViewController.xib */,
@@ -348,11 +348,11 @@
 				6CCE0EE415E5C3230019940A /* MainStoryboard.storyboard in Resources */,
 				6CCE0F0815E5C4950019940A /* README.md in Resources */,
 				8E15B40415EFB57D001764DB /* PickerViewController.xib in Resources */,
-				E862291615F2EC66001EF9FF /* photo1.png in Resources */,
-				E862291715F2EC66001EF9FF /* photo2.png in Resources */,
-				E862291815F2EC66001EF9FF /* photo3.png in Resources */,
-				E862291915F2EC66001EF9FF /* photo4.png in Resources */,
-				E862291A15F2EC66001EF9FF /* photo5.png in Resources */,
+				E862294315F50D12001EF9FF /* photo1.png in Resources */,
+				E862294415F50D12001EF9FF /* photo2.png in Resources */,
+				E862294515F50D12001EF9FF /* photo3.png in Resources */,
+				E862294615F50D12001EF9FF /* photo4.png in Resources */,
+				E862294715F50D12001EF9FF /* photo5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
