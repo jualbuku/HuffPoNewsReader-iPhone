@@ -10,43 +10,46 @@
 #import <HuffPoAPI/HuffPoAPI.h>
 #import "PickerViewController.h"
 
-@interface ViewController : UIViewController<UIGestureRecognizerDelegate, FeedRefreshDelegate> {
+@interface ViewController : UIViewController<UIGestureRecognizerDelegate, FeedRefreshDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UIActionSheetDelegate> {
     
     //add-gesture-to-main
     id <FeedRefreshDelegate> delegate;
     IBOutlet UIView *gestureHandlerView;
     
     Feed *topNewsFeed;
-    Feed *politicsFeed;
+    Feed *sectionFeed;
     Feed *searchFeed;
     Feed *currentFeed;
     //end of add-gesture-to-main
-
     
-    
-    
-    @private PickerViewController *pvc;
+    //@private PickerViewController *pvc;
     @private HuffPoAPI *api;
+    
+    @private UIActionSheet *sectionActionSheet;
+    @private UIPickerView *sectionPickerView;
+    @private NSArray *huffPoSections;
+    @private NSInteger sectionIdx;
 }
 
 @property (atomic, strong) HuffPoAPI *api;
 
 -(IBAction)goToPicker:(id)sender;
-
-
+-(IBAction)appearSectionSelector:(id)sender;
+-(void)dismissActionSheet:(id)sender;
 
 //add-gesture
 
 @property (atomic,strong) IBOutlet UIView *gestureHandlerView;
 @property (nonatomic, retain) id  <FeedRefreshDelegate> delegate;
 @property (atomic,strong) Feed *topNewsFeed;
-@property (atomic,strong) Feed *politicsFeed;
+@property (atomic,strong) Feed *sectionFeed;
 @property (atomic,strong) Feed *searchFeed;
 @property (atomic,strong) Feed *currentFeed;
 @property (weak, nonatomic) IBOutlet UITextView *labelTitle;
 @property (weak, nonatomic) IBOutlet UITextView *labelTagline;
 @property (weak, nonatomic) IBOutlet UIImageView *imgImg;
-- (IBAction)changeNews:(id)sender;
--(void)detectRight;
-//end of add-gesture-to-main
+
+@property (atomic, strong) NSArray *huffPoSections;
+@property (atomic, strong) UIPickerView *sectionPickerView;
+
 @end
