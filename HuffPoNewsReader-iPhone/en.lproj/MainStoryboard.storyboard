@@ -1,67 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E2620" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BeG-Ek-Lwg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="aio-Ww-TUA">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="5">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dpc-MU-E5X">
-                                <rect key="frame" x="124" y="182" width="72" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="GO">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goToPicker:" destination="2" eventType="touchUpInside" id="Ydx-Ku-QqL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fHp-w4-1ca">
-                                <rect key="frame" x="102" y="248" width="117" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Article View">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hZf-XR-pQO" kind="modal" identifier="articleTrans" id="mtn-q1-uil"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="64" y="-56"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="Xwb-Hb-RNy">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFV-iD-rMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="aio-Ww-TUA" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bnu-Ou-eMC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="6Q4-Gp-7ZW">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.59999999999999998" contentMode="scaleToFill" editable="NO" text="title" id="FXy-AI-Iow">
@@ -78,23 +32,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <navigationBar contentMode="scaleToFill" id="Qlv-Zq-vka">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="WN1-xu-dYP">
+                                        <barButtonItem key="leftBarButtonItem" title="Pick Section" id="oml-gT-9fG">
+                                            <connections>
+                                                <action selector="appearSectionSelector:" destination="aio-Ww-TUA" id="1dD-Nt-YUo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" id="kYo-8u-pHj">
+                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="S75-7K-DT2">
-                        <barButtonItem key="leftBarButtonItem" title="Go" id="hvX-Xv-3IL">
-                            <connections>
-                                <action selector="goToPicker:" destination="aio-Ww-TUA" id="T3g-Xh-XDk"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Article View (or tap on screen)" id="h85-0e-jb9">
-                            <connections>
-                                <segue destination="hZf-XR-pQO" kind="modal" identifier="articleTrans" id="Rpd-yj-M5P"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
-                        <outlet property="gestureHandlerView" destination="Bnu-Ou-eMC" id="Dmk-9g-Z2l"/>
+                        <outlet property="gestureHandlerView" destination="kYo-8u-pHj" id="S00-d6-3ts"/>
                         <outlet property="imgImg" destination="6Q4-Gp-7ZW" id="J0O-lo-ct5"/>
                         <outlet property="labelTagline" destination="RKJ-hj-vxa" id="au3-ej-CdZ"/>
                         <outlet property="labelTitle" destination="FXy-AI-Iow" id="h26-In-mdo"/>
@@ -102,35 +62,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="64" y="555"/>
-        </scene>
-        <!--Scroll View Controller-->
-        <scene sceneID="rQU-bj-aL4">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VrK-Kg-whv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="8OS-PG-v1E" customClass="ScrollViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="f68-zb-2h3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ve1-RE-jWO">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="8OS-PG-v1E" id="Exl-1M-C7c"/>
-                                </connections>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="scrollView" destination="ve1-RE-jWO" id="COe-06-keO"/>
-                        <outlet property="view" destination="f68-zb-2h3" id="9ri-Ko-8vH"/>
-                        <segue destination="hZf-XR-pQO" kind="modal" identifier="articleTrans" id="F7P-ft-L8Y"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="595" y="555"/>
+            <point key="canvasLocation" x="120" y="-56"/>
         </scene>
         <!--Article View Controller-->
         <scene sceneID="3rg-Tu-sHd">
@@ -170,24 +102,6 @@
             </objects>
             <point key="canvasLocation" x="604" y="-56"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="BHP-Fe-Oef">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uhe-zJ-epy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="BeG-Ek-Lwg" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rnm-Ri-nYQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="aio-Ww-TUA" kind="relationship" relationship="rootViewController" id="TyL-0W-OBn"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-348" y="555"/>
-        </scene>
     </scenes>
     <classes>
         <class className="ArticleViewController" superclassName="UIViewController">
@@ -197,16 +111,10 @@
                 <relationship kind="outlet" name="articleBodyWebView" candidateClass="UIWebView"/>
             </relationships>
         </class>
-        <class className="ScrollViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScrollViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="labelTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="appearSectionSelector:"/>
                 <relationship kind="action" name="changeNews:"/>
                 <relationship kind="action" name="goToPicker:"/>
                 <relationship kind="outlet" name="gestureHandlerView" candidateClass="UIView"/>
@@ -221,7 +129,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="F7P-ft-L8Y"/>
-    </inferredMetricsTieBreakers>
 </document>

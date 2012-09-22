@@ -77,7 +77,7 @@
 
 - (IBAction)getSection:(id)sender {
     NSLog(@"Go button pressed");
-    NSLog([NSString stringWithFormat:@"Section selected: %@", [[huffPoSections objectAtIndex:[pickerView selectedRowInComponent:0]] label]]);
+    NSLog(@"Section selected: %@", [[huffPoSections objectAtIndex:[pickerView selectedRowInComponent:0]] label]);
 }
 
 - (IBAction)appearSectionSelector:(id)sender {
@@ -115,25 +115,6 @@
     
     [actionSheet setBounds:CGRectMake(0, 0, 320, 480)];
     
-    
-//    /* first create a UIActionSheet, where you define a title, delegate and a button to close the sheet again */
-//    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Select section" delegate:self cancelButtonTitle:@"Done" destructiveButtonTitle:nil otherButtonTitles:nil]; 
-//    //actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
-//    
-//    /* Initialize a UIPickerView with 100px space above it, for the button of the UIActionSheet. */
-//    UIPickerView* positionPicker = [[UIPickerView alloc] initWithFrame:CGRectMake(0,100, 320, 216)];
-//    pickerView.showsSelectionIndicator = YES;
-//    positionPicker.dataSource = self; 
-//    positionPicker.delegate = self;  
-//    
-//    /* Add the UIPickerView to the UIActionSheet */
-//    [actionSheet addSubview:positionPicker];  
-//    
-//    /* Add the UIActionSheet to the view */
-//    [actionSheet showInView:self.view];  
-//    
-//    /* Make sure the UIActionSheet is big enough to fit your UIPickerView and it's buttons */
-//    [actionSheet setBounds:CGRectMake(0,0, 320, 411)];  
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
